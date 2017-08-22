@@ -116,12 +116,14 @@ a {
   #projects #root {
     width: 100%;
     min-width: 320px;
+    min-height: 300px;
     max-width: 1155px;
     margin-top: 100px;
     background-color: ghostwhite;
     z-index: 2;
     margin: 0 auto;
-    background-color: #f7f7f7; }
+    background-color: #f7f7f7;
+    padding: 10px; }
   #projects canvas {
     position: absolute;
     top: 0;
