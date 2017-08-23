@@ -5,57 +5,64 @@ body {
   padding: 0;
   margin: 0;
   font-size: 16px;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
 
 #main-container {
   background: #9799af;
   background: -moz-linear-gradient(-45deg, #9799af 0%, #e2bebe 99%);
   background: -webkit-linear-gradient(-45deg, #9799af 0%, #e2bebe 99%);
   background: linear-gradient(135deg, #9799af 0%, #e2bebe 99%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9799af', endColorstr='#e2bebe',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9799af', endColorstr='#e2bebe', GradientType=1);
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   position: relative;
   background-color: #f7f7f7;
   width: 100%;
   min-height: 100%;
   box-sizing: border-box; }
-  #main-container #vertical-column {
-    min-width: 320px;
-    margin-top: 0;
-    padding-top: 5%;
-    box-sizing: border-box;
-    width: 30%;
-    height: 80%;
-    min-height: 100%;
-    background-color: #161616;
+  #main-container #intro {
+    width: 80%;
     color: white;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.9);
-    max-width: 350px; }
+    font-size: 1.4em; }
+    #main-container #intro #soft-eng {
+      background-color: #464646; }
+    #main-container #intro #learn {
+      font-family: 'Limelight', cursive;
+      color: #464646; }
+    #main-container #intro #practice {
+      font-weight: 700;
+      position: relative;
+      font-style: italic;
+      color: #464646;
+      border-bottom: dashed 2px #464646; }
+    #main-container #intro #developer {
+      background-color: #ade09f; }
   #main-container #main-btns {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40%; }
+    width: 100%; }
     #main-container #main-btns ul {
-      padding: 0;
-      text-align: center;
-      min-width: 250px;
-      max-width: 400px; }
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 0; }
       #main-container #main-btns ul li {
-        margin-bottom: 30px; }
+        margin: 0 5px; }
         #main-container #main-btns ul li:nth-of-type(1) a {
-          border-bottom: 4px solid crimson; }
+          border-left: 4px solid crimson;
+          border-right: 4px solid crimson;
+          border-bottom: 1px solid crimson; }
         #main-container #main-btns ul li:nth-of-type(2) a {
-          border-bottom: 4px solid goldenrod; }
-        #main-container #main-btns ul li:nth-of-type(3) a {
-          border-bottom: 4px solid blueviolet; }
+          border-left: 4px solid goldenrod;
+          border-right: 4px solid goldenrod;
+          border-bottom: 1px solid goldenrod; }
         #main-container #main-btns ul li a {
           display: inline-block;
-          width: 80%;
+          width: 100%;
           height: 50px;
           outline: none;
           background-color: #161616;
@@ -63,9 +70,14 @@ body {
           border-bottom: 2px solid black;
           color: white;
           font-size: 1.3em;
-          line-height: 50px;
-          box-shadow: 0 0 5px 2px #9b9b9b;
-          box-sizing: border-box; }
+          font-weight: 300;
+          line-height: 45px;
+          box-shadow: 0 0 8px 1px #464646;
+          box-sizing: border-box;
+          padding: 0 5px;
+          border-radius: 5%; }
+        #main-container #main-btns ul li a:active {
+          box-shadow: inset 0 0 8px 1px #464646; }
 
 ul li {
   list-style: none; }
@@ -92,7 +104,8 @@ a {
     max-width: 300px;
     min-width: 300px;
     padding: 5px;
-    box-shadow: 0 5px 10px #9b9b9b; }
+    box-shadow: 0 5px 10px #9b9b9b;
+    margin-bottom: 30px; }
   #skills-section .skillset ul {
     display: flex;
     flex-direction: row;
@@ -141,7 +154,7 @@ a {
     margin: 0 auto;
     background-color: rgba(247, 247, 247, 0.7);
     padding: 10px;
-    box-shadow: 0 0 10px #262525; }
+    box-shadow: 0 0 5px 1px #4d85d6; }
   #projects canvas {
     position: absolute;
     top: 0;
