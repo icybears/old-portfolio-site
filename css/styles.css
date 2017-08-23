@@ -82,12 +82,25 @@ a {
   box-sizing: border-box;
   display: flex;
   justify-content: space-around;
+  align-items: baseline;
   flex-wrap: wrap;
   align-items: center;
   background-color: #f7f7f7; }
   #skills-section .skillset {
-    width: 200px;
-    background-color: white; }
+    background-color: white;
+    width: 30%;
+    max-width: 300px;
+    min-width: 300px;
+    text-align: center;
+    padding: 5px; }
+  #skills-section .skillset ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    #skills-section .skillset ul svg {
+      width: 100px;
+      height: 100px; }
   #skills-section h2 {
     text-align: center; }
   #skills-section ul {
